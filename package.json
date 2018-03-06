@@ -5,7 +5,7 @@
   "main": "src/main.ts",
   "scripts": {
     "test": "jest",
-    "lint": "tslint src/**/*.ts"
+    "lint": "tslint src/**/*.{ts,tsx}"
   },
   "repository": {
     "type": "git",
@@ -15,11 +15,11 @@
   "license": "MIT",
   "jest": {
     "verbose": true,
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts$",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
     "transform": {
-      "^.+\\.ts$": "ts-jest"
+      "^.+\\.tsx?$": "ts-jest"
     },
-    "moduleFileExtensions": ["ts", "js", "json", "node"]
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
   },
   "devDependencies": {
     "@types/jest": "^22.2.0",
